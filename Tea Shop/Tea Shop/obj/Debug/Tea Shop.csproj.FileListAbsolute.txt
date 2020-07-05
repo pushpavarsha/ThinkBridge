@@ -56,6 +56,7 @@ F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\bin\EntityFramework.SqlServer.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\bin\Microsoft.Web.Infrastructure.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\bin\Newtonsoft.Json.dll
+F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\bin\ShopModel.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\bin\System.Net.Http.Formatting.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\bin\System.Web.Helpers.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\bin\System.Web.Http.dll
@@ -67,6 +68,7 @@ F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\bin\System.Web.WebPages.Deployment.
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\bin\System.Web.WebPages.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\bin\System.Web.WebPages.Razor.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\bin\WebGrease.dll
+F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\bin\ShopModel.pdb
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\bin\EntityFramework.xml
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\bin\EntityFramework.SqlServer.xml
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\bin\System.Web.Helpers.xml
@@ -82,8 +84,8 @@ F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\bin\System.Net.Http.Formatting.xml
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\bin\System.Web.Http.xml
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\bin\System.Web.Http.WebHost.xml
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\obj\Debug\Tea Shop.csprojAssemblyReference.cache
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\obj\Debug\Tea Shop.csproj.CoreCompileInputs.cache
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\obj\Debug\Tea Shop.csproj.CopyComplete
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\obj\Debug\Tea Shop.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\obj\Debug\Tea Shop.pdb
-F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\obj\Debug\Tea Shop.csprojAssemblyReference.cache

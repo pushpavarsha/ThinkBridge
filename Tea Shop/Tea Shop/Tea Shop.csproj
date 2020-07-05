@@ -54,6 +54,7 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
@@ -143,31 +144,10 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ShopController.cs" />
-    <Compile Include="Controllers\TeaApiController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Interfaces\IShop.cs" />
-    <Compile Include="Models\TeaModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TeaModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TeaModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TeaModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TeaModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TeaModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TeaShop.cs">
-      <DependentUpon>TeaModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository\RepositoryPat.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -178,25 +158,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\TeaModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TeaModel.edmx</DependentUpon>
-      <LastGenOutput>TeaModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\TeaModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TeaModel.edmx</DependentUpon>
-      <LastGenOutput>TeaModel.cs</LastGenOutput>
-    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="Models\TeaModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>TeaModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\TeaModel.edmx.diagram">
-      <DependentUpon>TeaModel.edmx</DependentUpon>
-    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -222,13 +185,13 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Shop\CreateItem.cshtml" />
     <Content Include="Views\Shop\GetDetails.cshtml" />
-    <Content Include="Views\Shop\GetItemDetail.cshtml" />
+    <Content Include="Views\Shop\CreateItem.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Images\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -245,6 +208,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShopModel\ShopModel.csproj">
+      <Project>{7600C833-7EC5-4182-B04F-102286B7ABA2}</Project>
+      <Name>ShopModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

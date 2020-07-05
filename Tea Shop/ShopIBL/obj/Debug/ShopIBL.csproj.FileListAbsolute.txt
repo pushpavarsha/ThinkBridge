@@ -1,0 +1,14 @@
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopIBL\bin\Debug\ShopIBL.dll
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopIBL\bin\Debug\ShopIBL.pdb
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopIBL\bin\Debug\ShopData.dll
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopIBL\bin\Debug\ShopModel.dll
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopIBL\bin\Debug\EntityFramework.dll
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopIBL\bin\Debug\ShopData.pdb
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopIBL\bin\Debug\ShopData.dll.config
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopIBL\bin\Debug\ShopModel.pdb
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopIBL\bin\Debug\EntityFramework.xml
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopIBL\obj\Debug\ShopIBL.csprojAssemblyReference.cache
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopIBL\obj\Debug\ShopIBL.csproj.CoreCompileInputs.cache
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopIBL\obj\Debug\ShopIBL.csproj.CopyComplete
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopIBL\obj\Debug\ShopIBL.dll
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopIBL\obj\Debug\ShopIBL.pdb

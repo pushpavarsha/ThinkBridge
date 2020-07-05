@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ThinkBridgeModelStoreContainer" CdmEntityContainer="ThinkBridgeEntities">
+    <EntitySetMapping Name="TeaShops">
+      <EntityTypeMapping TypeName="ThinkBridgeModel.TeaShop">
+        <MappingFragment StoreEntitySet="TeaShop">
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="ImageFile" ColumnName="ImageFile" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

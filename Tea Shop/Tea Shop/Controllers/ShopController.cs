@@ -4,55 +4,79 @@ using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using Tea_Shop.Interfaces;
-using Tea_Shop.Models;
-using Tea_Shop.Repository;
+using System.Data.Entity;
+using ShopModel;
+using System.Net.Http;
+
 namespace Tea_Shop.Controllers
 {
     public class ShopController : Controller
     {
-        ThinkBridgeEntities db = new ThinkBridgeEntities();
-       
-        // private IShop shop;
-        //ShopController(RepositoryPat repository)
-        //{
-        //    shop = repository;
-        //}
-        // GET: Shop
+              
         [HttpGet]
         public ActionResult GetDetails()
         {
-            RepositoryPat repository = new RepositoryPat();
-            IEnumerable<TeaShop> itemList = repository.GetDetails();
-                //db.TeaShops.ToList();
+            IEnumerable<TeaShopVM> itemList = null;
+
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("https://localhost:44393/api/TeaShop");
+                var responseTask = client.GetAsync("SaleDetails");
+                responseTask.Wait();
+
+                var result = responseTask.Result;
+                if (result.IsSuccessStatusCode)
+                {
+                    var readTask = result.Content.ReadAsAsync<IList<TeaShopVM>>();
+                    readTask.Wait();
+
+                    itemList = readTask.Result;
+                }
+                else
+                {
+                    itemList = Enumerable.Empty<TeaShopVM>();
+
+                    ModelState.AddModelError(string.Empty, "Server error. Please contact administrator.");
+                }
+
+            }
             return View(itemList);
         }
-
         [HttpGet]
         public ActionResult CreateItem()
         {
             return View();
         }
         [HttpPost]
-        public ActionResult CreateItem(HttpPostedFileBase file,TeaShop teaShop)
+        public ActionResult CreateItem(HttpPostedFileBase file,TeaShopVM teaShop)
         {
             string filename = Path.GetFileName(file.FileName);
             string _filename = DateTime.Now.ToString("yymmssff") + filename;
             string fileextension = Path.GetExtension(file.FileName);
             string path = Path.Combine(Server.MapPath("~/Images/"), _filename);
             teaShop.ImageFile = "~/Images/" + _filename;
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("https://localhost:44393/api/TeaShop");
+                var postTask = client.PostAsJsonAsync<TeaShopVM>("AddItem", teaShop);
+                postTask.Wait();
 
-            RepositoryPat repository = new RepositoryPat();
-            int success = repository.InsertDetails(teaShop);
-            file.SaveAs(path);
-            return RedirectToAction("GetDetails");
+                var result = postTask.Result;
+                if (result.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("GetDetails");
+                }
+                file.SaveAs(path);
+            }
+
+            ModelState.AddModelError(string.Empty, "Server Error. Please contact administrator.");                    
+            return View(teaShop);
         }
 
         [HttpGet]
         public ActionResult GetItemDetail(int id)
-        {
-            var item = db.TeaShops.Where(x => x.ItemId == id).FirstOrDefault();
-            return View(item);
+        {        
+            return View();
         }
        
     }

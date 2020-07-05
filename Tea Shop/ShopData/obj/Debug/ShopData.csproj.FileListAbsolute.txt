@@ -1,0 +1,11 @@
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopData\bin\Debug\ShopData.dll.config
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopData\bin\Debug\ShopData.dll
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopData\bin\Debug\ShopData.pdb
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopData\bin\Debug\EntityFramework.dll
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopData\bin\Debug\EntityFramework.SqlServer.dll
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopData\bin\Debug\EntityFramework.xml
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopData\bin\Debug\EntityFramework.SqlServer.xml
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopData\obj\Debug\ShopData.csproj.CoreCompileInputs.cache
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopData\obj\Debug\ShopData.csproj.CopyComplete
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopData\obj\Debug\ShopData.dll
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopData\obj\Debug\ShopData.pdb

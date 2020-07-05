@@ -16,7 +16,7 @@ namespace Tea_Shop
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Shop", action = "GetDetails", id = UrlParameter.Optional }
             );
         }
     }
