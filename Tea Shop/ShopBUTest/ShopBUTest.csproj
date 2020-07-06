@@ -6,11 +6,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A55DDF55-7F62-41FD-9B0A-A35F524D00F5}</ProjectGuid>
+    <ProjectGuid>{B56E58BE-4B6A-4D38-9298-361507F4D588}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ShopBLTest</RootNamespace>
-    <AssemblyName>ShopBLTest</AssemblyName>
+    <RootNamespace>ShopBUTest</RootNamespace>
+    <AssemblyName>ShopBUTest</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -57,7 +57,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TeaShopRepoTest.cs" />
+    <Compile Include="TeaShopBUTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -65,9 +65,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ShopBL\ShopBL.csproj">
-      <Project>{4A3F2433-1FAE-49D1-81E9-2356C1D60763}</Project>
-      <Name>ShopBL</Name>
+    <ProjectReference Include="..\ShopBU\ShopBU.csproj">
+      <Project>{8668FB1E-85F5-4F44-9C61-A493A30F4452}</Project>
+      <Name>ShopBU</Name>
     </ProjectReference>
     <ProjectReference Include="..\ShopModel\ShopModel.csproj">
       <Project>{7600C833-7EC5-4182-B04F-102286B7ABA2}</Project>

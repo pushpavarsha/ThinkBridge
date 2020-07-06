@@ -112,13 +112,17 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ShopBL\ShopBL.csproj">
+    <ProjectReference Include="..\ShopBL\ShopDAL.csproj">
       <Project>{4a3f2433-1fae-49d1-81e9-2356c1d60763}</Project>
-      <Name>ShopBL</Name>
+      <Name>ShopDAL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ShopIBL\ShopIBL.csproj">
-      <Project>{DA6F8FDF-7CA3-4691-85D5-35B9A5EDED85}</Project>
-      <Name>ShopIBL</Name>
+    <ProjectReference Include="..\ShopData\ShopData.csproj">
+      <Project>{6c33e1e6-b713-49f9-947d-d4202bc9c7b4}</Project>
+      <Name>ShopData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShopIBL\ShopIDAL.csproj">
+      <Project>{da6f8fdf-7ca3-4691-85d5-35b9a5eded85}</Project>
+      <Name>ShopIDAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\ShopModel\ShopModel.csproj">
       <Project>{7600c833-7ec5-4182-b04f-102286b7aba2}</Project>

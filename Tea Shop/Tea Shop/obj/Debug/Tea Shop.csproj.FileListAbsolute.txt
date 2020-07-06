@@ -89,3 +89,6 @@ F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\obj\Debug\Tea Shop.csproj.CoreCompi
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\obj\Debug\Tea Shop.csproj.CopyComplete
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\obj\Debug\Tea Shop.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\obj\Debug\Tea Shop.pdb
+F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\bin\ShopBU.dll
+F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\bin\ShopBU.pdb
+F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop\bin\ShopBU.dll.config

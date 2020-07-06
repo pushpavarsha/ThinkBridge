@@ -17,9 +17,9 @@
     </p>
     <table class="table">
         <tr>
-            <th>
+            @*<th>
                 @Html.DisplayNameFor(model => model.ItemId)
-            </th>
+            </th>*@
             <th>
                 @Html.DisplayNameFor(model => model.ItemName)
             </th>
@@ -37,9 +37,9 @@
     
     @foreach (var item in Model) {
         <tr>
-            <td>
+            @*<td>
                 @Html.DisplayFor(modelItem => item.ItemId)
-            </td>
+            </td>*@
             <td>
                 @Html.DisplayFor(modelItem => item.ItemName)
             </td>
@@ -47,7 +47,8 @@
                 @Html.DisplayFor(modelItem => item.Price)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ImageFile)
+                @*@Html.DisplayFor(modelItem => item.ImageFile)*@
+                <img src="@Url.Content(item.ImageFile)" alt="No Image" width="50" height="40"/>
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Description)

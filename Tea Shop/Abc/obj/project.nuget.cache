@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "qx8rEgIQLXHD0Nt2k7H1opd6x82GTYAoOsNrlEiL55u6kM0IokJSFsSvlESSgf1OIBBviShaL8q41tGt9FFgxQ==",
+  "success": true,
+  "projectFilePath": "F:\\ThinkBridge\\ThinkBridge\\Tea Shop\\Abc\\Abc.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PUSHPA\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\PUSHPA\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

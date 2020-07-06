@@ -210,6 +210,10 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ShopBU\ShopBU.csproj">
+      <Project>{8668FB1E-85F5-4F44-9C61-A493A30F4452}</Project>
+      <Name>ShopBU</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ShopModel\ShopModel.csproj">
       <Project>{7600C833-7EC5-4182-B04F-102286B7ABA2}</Project>
       <Name>ShopModel</Name>

@@ -1,5 +1,5 @@
-﻿using ShopBL;
-using ShopIBL;
+﻿using ShopDAL;
+using ShopIDAL;
 using ShopModel;
 using System;
 using System.Collections.Generic;

@@ -44,3 +44,10 @@ F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\obj\Debug\Tea Shop.Tests.cspr
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\obj\Debug\Tea Shop.Tests.csproj.CopyComplete
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\obj\Debug\Tea Shop.Tests.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\obj\Debug\Tea Shop.Tests.pdb
+F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\EntityFramework.dll
+F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\EntityFramework.SqlServer.dll
+F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\ShopBU.dll
+F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\EntityFramework.xml
+F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\EntityFramework.SqlServer.xml
+F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\ShopBU.pdb
+F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\ShopBU.dll.config

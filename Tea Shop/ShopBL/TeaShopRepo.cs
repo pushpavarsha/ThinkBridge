@@ -1,5 +1,5 @@
 ﻿using ShopData;
-using ShopIBL;
+using ShopIDAL;
 using ShopModel;
 using System;
 using System.Collections.Generic;
@@ -9,15 +9,17 @@ using System.Web;
 
 
 
-namespace ShopBL
+namespace ShopDAL
 {
     public class TeaShopRepo : ITeaShop
     {
         ThinkBridgeEntities db = new ThinkBridgeEntities();
 
-        public void DeleteDetails(int itemId)
+        public void DeleteDetails(int _itemId)
         {
-            throw new NotImplementedException();
+            TeaShop item = db.TeaShops.Where(x => x.ItemId == _itemId).FirstOrDefault();
+            db.TeaShops.Remove(item);
+            db.SaveChanges();
         }
 
         public IEnumerable<TeaShopVM> GetDetails()
@@ -35,19 +37,40 @@ namespace ShopBL
         }
 
 
-        public TeaShopVM GetDetailsById(int itemId)
+        public TeaShopVM GetDetailsById(int _itemId)
         {
-            throw new NotImplementedException();
+            TeaShop item= db.TeaShops.Where(x => x.ItemId == _itemId).FirstOrDefault();
+            TeaShopVM _item = new TeaShopVM();
+            _item.ItemId = item.ItemId;
+            _item.ItemName =item.ItemName;
+            _item.Price =item.Price;
+            _item.ImageFile =item.ImageFile;
+            _item.Description = item.Description;
+
+            return _item;        
         }
 
         public void InsertDetails(TeaShopVM item)
         {
-            throw new NotImplementedException();
+            TeaShop _shopItem = new TeaShop();
+            _shopItem.ItemName = item.ItemName;
+            _shopItem.Price = item.Price;
+            _shopItem.ImageFile = item.ImageFile;
+            _shopItem.Description = item.Description;
+            db.TeaShops.Add(_shopItem);
+            db.SaveChanges();
+
         }
 
-        public void UpdateDetails(TeaShopVM item)
+        public void UpdateDetails(TeaShopVM _item)
         {
-            throw new NotImplementedException();
+            TeaShop item = new TeaShop();
+            item.ItemName =_item.ItemName;
+            item.Price =_item.Price;
+            item.ImageFile =_item.ImageFile;
+            item.Description =_item.Description;
+            db.Entry(item).State = System.Data.Entity.EntityState.Modified;
+            db.SaveChanges();
         }
     }
 }

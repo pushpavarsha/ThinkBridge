@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4A3F2433-1FAE-49D1-81E9-2356C1D60763}</ProjectGuid>
+    <ProjectGuid>{8668FB1E-85F5-4F44-9C61-A493A30F4452}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ShopBL</RootNamespace>
-    <AssemblyName>ShopBL</AssemblyName>
+    <RootNamespace>ShopBU</RootNamespace>
+    <AssemblyName>ShopBU</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -40,9 +40,16 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,20 +58,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TeaShopBU.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TeaShopRepo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ShopData\ShopData.csproj">
-      <Project>{6C33E1E6-B713-49F9-947D-D4202BC9C7B4}</Project>
-      <Name>ShopData</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ShopIBL\ShopIBL.csproj">
-      <Project>{DA6F8FDF-7CA3-4691-85D5-35B9A5EDED85}</Project>
-      <Name>ShopIBL</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ShopModel\ShopModel.csproj">
-      <Project>{7600c833-7ec5-4182-b04f-102286b7aba2}</Project>
+      <Project>{7600C833-7EC5-4182-B04F-102286B7ABA2}</Project>
       <Name>ShopModel</Name>
     </ProjectReference>
   </ItemGroup>
