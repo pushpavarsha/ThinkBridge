@@ -10,7 +10,7 @@ namespace ShopAPITest
     public class TeaShopApiTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void Details()
         {
             try
             { 
@@ -22,6 +22,21 @@ namespace ShopAPITest
             {
 
             }
+        }
+
+        [TestMethod]
+        public void  Delete()
+        {
+            try
+            { 
+                TeaShopController teaShopCont = new TeaShopController();
+                teaShopCont.Request = new HttpRequestMessage();
+                var details = teaShopCont.DeleteItem(5);
+            }catch(Exception ex)
+            {
+
+            }
+
         }
     }
 }

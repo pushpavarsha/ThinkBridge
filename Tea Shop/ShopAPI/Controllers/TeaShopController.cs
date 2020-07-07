@@ -18,12 +18,18 @@ namespace ShopAPI
         [HttpGet]
         public IHttpActionResult SaleDetails()
         {
-            var details = db.GetDetails();
-            if(details.Count()==0)
+            try 
+            { 
+                var details = db.GetDetails();
+                if(details.Count()==0)
+                {
+                    return NotFound();
+                }
+                return Ok(details);
+            }catch(Exception ex)
             {
-                return NotFound();
+                return BadRequest(ex.Message.ToString());
             }
-            return Ok(details);                    
         }
         [HttpPost]
         public IHttpActionResult AddItem(TeaShopVM teaShop)
@@ -49,5 +55,36 @@ namespace ShopAPI
             }
 
         }
+
+        [HttpGet]
+        [Route("api/TeaShop/GetItemById/{itemId}")]
+        public IHttpActionResult GetItemById(int itemId)
+        {
+            try
+            {
+               TeaShopVM item= db.GetDetailsById(itemId);
+                return Ok(item);
+
+            }catch(Exception ex)
+            {
+                return BadRequest(ex.Message.ToString());
+            }
+        }
+
+        [HttpDelete]
+        [Route("api/TeaShop/DeleteItem/{itemId}")]
+        public IHttpActionResult DeleteItem(int itemId)
+        {
+            try
+            {
+                db.DeleteDetails(itemId);
+                return Ok();
+            }catch(Exception ex)
+            {
+                return BadRequest(ex.Message.ToString());
+            }
+
+        }
+
     }
 } 

@@ -22,5 +22,26 @@ namespace ShopBUTest
             }
 
         }
+        [TestMethod]
+        public void Insert()
+        {
+            try
+            {
+                TeaShopBU obj = new TeaShopBU(); 
+                TeaShopVM shop = new TeaShopVM()
+                {
+                    ItemName = "ABC",
+                    Price = 123,
+                    ImageFile = "abc.jpeg",
+                    Description = "abc"
+                };
+                bool flag=obj.InsertItem(shop);
+
+
+            }catch(Exception ex)
+            {
+
+            }
+        }
     }
 }

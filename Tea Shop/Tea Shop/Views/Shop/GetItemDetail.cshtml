@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ShopModel.TeaShopVM>
+﻿@model ShopModel.TeaShopVM
 
 @{
     Layout = null;
@@ -9,17 +9,17 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>GetDetails</title>
+    <title>GetItemDetail</title>
 </head>
 <body>
-    <p>
-        @Html.ActionLink("Create New", "CreateItem")
-    </p>
+    @*<p>
+        @Html.ActionLink("Create New", "Create")
+    </p>*@
     <table class="table">
         <tr>
-            @*<th>
+            <th>
                 @Html.DisplayNameFor(model => model.ItemId)
-            </th>*@
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.ItemName)
             </th>
@@ -35,32 +35,31 @@
             <th></th>
         </tr>
     
-    @foreach (var item in Model) {
-        <tr onclick="location.href='@Url.Action("GetItemDetail","Shop",new { id=item.ItemId})'">
+  
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.ItemId)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ItemName)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ImageFile)
+                @*<img src="@Url.Content(item.ImageFile)" alt="No Image" width="50" height="40" />*@
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Description)
+            </td>
             @*<td>
-                @Html.DisplayFor(modelItem => item.ItemId)
-            </td>*@
-            <td>
-                @Html.DisplayFor(modelItem => item.ItemName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                @*@Html.DisplayFor(modelItem => item.ImageFile)*@
-                <img src="@Url.Content(item.ImageFile)" alt="No Image" width="50" height="40"/>
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
                 @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
                 @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "DeleteItem", new {  id=item.ItemId })
-              
-            </td>
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>*@
         </tr>
-    }
+    
     
     </table>
 </body>

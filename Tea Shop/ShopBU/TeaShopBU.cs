@@ -34,7 +34,7 @@ namespace ShopBU
                 {
                     itemList = Enumerable.Empty<TeaShopVM>();
 
-                   
+
                 }
                 return itemList;
 
@@ -58,6 +58,57 @@ namespace ShopBU
                
             }
             return false;
+        }
+
+        public  TeaShopVM GetItemById(int _item)
+        {
+            TeaShopVM itemList = null;
+
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("https://localhost:44393/api/TeaShop/");
+                var responseTask = client.GetAsync("GetItemById/"+_item.ToString());
+                responseTask.Wait();
+
+                var result = responseTask.Result;
+                if (result.IsSuccessStatusCode)
+                {
+                    var readTask = result.Content.ReadAsAsync<TeaShopVM>();
+                    readTask.Wait();
+
+                    itemList = readTask.Result;
+                }
+                else
+                {
+                    itemList = null;
+
+
+                }
+                return itemList;
+
+            }
+
+        }
+
+        public bool DeleteItem(int _item)
+        {          
+            using(var client=new HttpClient())
+            {
+                client.BaseAddress = new Uri("https://localhost:44393/api/TeaShop/");
+                var responsetask = client.DeleteAsync("DeleteItem/" + _item.ToString());
+                responsetask.Wait();
+                var result = responsetask.Result;
+                if(result.IsSuccessStatusCode)
+                {
+                    return true;
+
+                }
+                else
+                {
+                    return false;
+                }
+            }
+
         }
     }
 }

@@ -19,39 +19,8 @@ namespace Tea_Shop.Controllers
         [HttpGet]
         public ActionResult GetDetails()
         {
-           // IEnumerable<TeaShopVM> itemList = null;
-           // itemList = shop.GetItemDetails();
-            //if (itemList.Count() > 0)
-            //{
-            //    itemList = Enumerable.Empty<TeaShopVM>();
-            //    ModelState.AddModelError(string.Empty, "Server error. Please contact administrator.");
-            //}
-            IEnumerable<TeaShopVM> itemList = null;
-
-            using (var client = new HttpClient())
-            {
-                client.BaseAddress = new Uri("https://localhost:44393/api/TeaShop/");
-                var responseTask = client.GetAsync("SaleDetails");
-                responseTask.Wait();
-
-                var result = responseTask.Result;
-                if (result.IsSuccessStatusCode)
-                {
-                    var readTask = result.Content.ReadAsAsync<IList<TeaShopVM>>();
-                    readTask.Wait();
-
-                    itemList = readTask.Result;
-                }
-                else
-                {
-                    itemList = Enumerable.Empty<TeaShopVM>();
-
-
-                }
-               // return itemList;
-
-            }
-            return View(itemList);
+            IEnumerable<TeaShopVM> list = shop.GetItemDetails();      
+            return View(list);
         }
         [HttpGet]
         public ActionResult CreateItem()
@@ -77,8 +46,16 @@ namespace Tea_Shop.Controllers
 
         [HttpGet]
         public ActionResult GetItemDetail(int id)
-        {        
-            return View();
+        {
+            TeaShopVM tea = shop.GetItemById(id);
+            return View(tea);
+        }
+
+       
+        public ActionResult DeleteItem(int id)
+        {
+            bool flag = shop.DeleteItem(id);
+            return RedirectToAction("GetDetails");
         }
        
     }
