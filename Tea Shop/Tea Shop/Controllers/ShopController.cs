@@ -52,11 +52,37 @@ namespace Tea_Shop.Controllers
         }
 
        
+        [HttpGet]
+        public ActionResult EditItem(int id)
+        {
+            TeaShopVM tea = shop.GetItemById(id);
+            return View(tea);
+        }
+
+        [HttpPost]
+        public ActionResult EditItem(HttpPostedFileBase file,TeaShopVM item)
+        {
+            string _filename = DateTime.Now.ToString("yymmssff") + Path.GetFileName(file.FileName);
+            item.ImageFile = "~/Images/" + _filename;
+            bool flag = shop.UpdateItem(item);
+            if (flag)
+            {
+                string path = Path.Combine(Server.MapPath("~/Images/"), _filename);
+                file.SaveAs(path);
+                return RedirectToAction("GetDetails");
+            }
+
+            ModelState.AddModelError(string.Empty, "Server Error. Please contact administrator.");
+           
+            return RedirectToAction("GetDetails");
+        }
+        [HttpPost]
         public ActionResult DeleteItem(int id)
         {
             bool flag = shop.DeleteItem(id);
             return RedirectToAction("GetDetails");
         }
        
+      
     }
 }

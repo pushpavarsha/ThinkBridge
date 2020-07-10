@@ -110,5 +110,23 @@ namespace ShopBU
             }
 
         }
+
+        public bool UpdateItem(TeaShopVM item)
+        {
+            using(var client=new HttpClient())
+            {
+                client.BaseAddress=new Uri("https://localhost:44393/api/TeaShop/");
+                var responsetask = client.PutAsJsonAsync<TeaShopVM>("UpdateItem", item);
+                responsetask.Wait();
+
+                var result = responsetask.Result;
+                if(result.IsSuccessStatusCode)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
     }
 }

@@ -64,11 +64,15 @@ namespace ShopDAL
 
         public void UpdateDetails(TeaShopVM _item)
         {
-            TeaShop item = new TeaShop();
-            item.ItemName =_item.ItemName;
-            item.Price =_item.Price;
-            item.ImageFile =_item.ImageFile;
-            item.Description =_item.Description;
+
+            TeaShop item = db.TeaShops.Where(x => x.ItemId == _item.ItemId).FirstOrDefault();
+            if(item != null)
+            {                
+                item.ItemName = _item.ItemName;
+                item.Price = _item.Price;
+                item.Description = _item.Description;
+                item.ImageFile = _item.ImageFile;
+            }
             db.Entry(item).State = System.Data.Entity.EntityState.Modified;
             db.SaveChanges();
         }

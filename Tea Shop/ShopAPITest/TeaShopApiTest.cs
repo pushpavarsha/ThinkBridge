@@ -31,7 +31,7 @@ namespace ShopAPITest
             { 
                 TeaShopController teaShopCont = new TeaShopController();
                 teaShopCont.Request = new HttpRequestMessage();
-                var details = teaShopCont.DeleteItem(5);
+                var details = teaShopCont.DeleteItem(4);
             }catch(Exception ex)
             {
 

@@ -1,7 +1,7 @@
 ﻿@model ShopModel.TeaShopVM
 
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
 }
 
 <!DOCTYPE html>
@@ -13,13 +13,13 @@
 </head>
 <body>
     @*<p>
-        @Html.ActionLink("Create New", "Create")
-    </p>*@
+            @Html.ActionLink("Create New", "Create")
+        </p>*@
     <table class="table">
         <tr>
-            <th>
+            @*<th>
                 @Html.DisplayNameFor(model => model.ItemId)
-            </th>
+            </th>*@
             <th>
                 @Html.DisplayNameFor(model => model.ItemName)
             </th>
@@ -34,12 +34,12 @@
             </th>
             <th></th>
         </tr>
-    
-  
+
+
         <tr>
-            <td>
+            @*<td>
                 @Html.DisplayFor(model => model.ItemId)
-            </td>
+            </td>*@
             <td>
                 @Html.DisplayFor(model => model.ItemName)
             </td>
@@ -47,20 +47,25 @@
                 @Html.DisplayFor(model => model.Price)
             </td>
             <td>
-                @Html.DisplayFor(model => model.ImageFile)
+                @*@Html.DisplayFor(model => model.ImageFile)*@
+                <img src="@Url.Content(Model.ImageFile)" alt="No Image" width="50" height="40" />
                 @*<img src="@Url.Content(item.ImageFile)" alt="No Image" width="50" height="40" />*@
             </td>
             <td>
                 @Html.DisplayFor(model => model.Description)
             </td>
-            @*<td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-            </td>*@
+            <td>
+                    @Html.ActionLink("Edit", "EditItem", new {  id=Model.ItemId  }) 
+                    @*@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*@
+            </td>
         </tr>
-    
-    
+
+
     </table>
+
+    <div>
+        @Html.ActionLink("Back to List", "GetDetails")
+    </div>
 </body>
 </html>

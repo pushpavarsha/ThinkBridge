@@ -86,5 +86,19 @@ namespace ShopAPI
 
         }
 
+        [HttpPut]
+        public IHttpActionResult UpdateItem(TeaShopVM item)
+        {
+            try
+            {
+                db.UpdateDetails(item);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message.ToString());
+            }
+        }
+
     }
 } 

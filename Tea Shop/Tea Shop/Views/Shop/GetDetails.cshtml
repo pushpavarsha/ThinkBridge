@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<ShopModel.TeaShopVM>
 
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
 }
 
 <!DOCTYPE html>
@@ -15,7 +15,7 @@
     <p>
         @Html.ActionLink("Create New", "CreateItem")
     </p>
-    <table class="table">
+    <table class="table" style="overflow-y:auto">
         <tr>
             @*<th>
                 @Html.DisplayNameFor(model => model.ItemId)
@@ -26,42 +26,44 @@
             <th>
                 @Html.DisplayNameFor(model => model.Price)
             </th>
-            <th>
+            @*<th>
                 @Html.DisplayNameFor(model => model.ImageFile)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Description)
-            </th>
+            </th>*@
             <th></th>
         </tr>
-    
-    @foreach (var item in Model) {
-        <tr onclick="location.href='@Url.Action("GetItemDetail","Shop",new { id=item.ItemId})'">
-            @*<td>
-                @Html.DisplayFor(modelItem => item.ItemId)
-            </td>*@
-            <td>
-                @Html.DisplayFor(modelItem => item.ItemName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                @*@Html.DisplayFor(modelItem => item.ImageFile)*@
-                <img src="@Url.Content(item.ImageFile)" alt="No Image" width="50" height="40"/>
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "DeleteItem", new {  id=item.ItemId })
-              
-            </td>
-        </tr>
-    }
-    
+
+        @foreach (var item in Model)
+        {
+            <tr onclick="location.href='@Url.Action("GetItemDetail","Shop",new { id=item.ItemId})'">
+            @*<tr onclick="EditDetails()">*@
+                @*<td>
+                    @Html.DisplayFor(modelItem => item.ItemId)
+                </td>*@
+                <td>
+                    @Html.DisplayFor(modelItem => item.ItemName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @*@Html.DisplayFor(modelItem => item.ImageFile)*@
+                    <img src="@Url.Content(item.ImageFile)" alt="No Image" width="50" height="40" />
+                </td>
+                @*<td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>*@
+                <td>
+                    @*@Html.ActionLink("Edit", "Edit", new {  id=item.ItemId  }) |*@
+                    @*@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |*@
+                    @Html.ActionLink("Delete", "DeleteItem", new { id = item.ItemId })
+
+                </td>
+            </tr>
+        }
+
     </table>
 </body>
 </html>
