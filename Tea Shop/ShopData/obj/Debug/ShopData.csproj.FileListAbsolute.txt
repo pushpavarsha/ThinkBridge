@@ -9,4 +9,3 @@ F:\ThinkBridge\ThinkBridge\Tea Shop\ShopData\obj\Debug\ShopData.csproj.CoreCompi
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopData\obj\Debug\ShopData.csproj.CopyComplete
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopData\obj\Debug\ShopData.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopData\obj\Debug\ShopData.pdb
-F:\ThinkBridge\ThinkBridge\Tea Shop\ShopData\obj\Debug\ShopData.csprojAssemblyReference.cache

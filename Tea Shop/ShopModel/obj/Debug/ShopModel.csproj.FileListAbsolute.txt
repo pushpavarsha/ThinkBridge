@@ -3,4 +3,3 @@ F:\ThinkBridge\ThinkBridge\Tea Shop\ShopModel\bin\Debug\ShopModel.pdb
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopModel\obj\Debug\ShopModel.csproj.CoreCompileInputs.cache
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopModel\obj\Debug\ShopModel.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopModel\obj\Debug\ShopModel.pdb
-F:\ThinkBridge\ThinkBridge\Tea Shop\ShopModel\obj\Debug\ShopModel.csprojAssemblyReference.cache
