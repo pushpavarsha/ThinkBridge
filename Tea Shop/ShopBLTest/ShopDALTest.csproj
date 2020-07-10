@@ -65,8 +65,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ShopBL\ShopDAL.csproj">
-      <Project>{4A3F2433-1FAE-49D1-81E9-2356C1D60763}</Project>
+    <ProjectReference Include="..\ShopDAL\ShopDAL.csproj">
+      <Project>{4a3f2433-1fae-49d1-81e9-2356c1d60763}</Project>
       <Name>ShopDAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\ShopModel\ShopModel.csproj">

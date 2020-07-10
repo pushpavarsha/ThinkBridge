@@ -114,7 +114,7 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ShopBL\ShopDAL.csproj">
+    <ProjectReference Include="..\ShopDAL\ShopDAL.csproj">
       <Project>{4a3f2433-1fae-49d1-81e9-2356c1d60763}</Project>
       <Name>ShopDAL</Name>
     </ProjectReference>
@@ -122,7 +122,7 @@
       <Project>{6c33e1e6-b713-49f9-947d-d4202bc9c7b4}</Project>
       <Name>ShopData</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ShopIBL\ShopIDAL.csproj">
+    <ProjectReference Include="..\ShopIDAL\ShopIDAL.csproj">
       <Project>{da6f8fdf-7ca3-4691-85d5-35b9a5eded85}</Project>
       <Name>ShopIDAL</Name>
     </ProjectReference>

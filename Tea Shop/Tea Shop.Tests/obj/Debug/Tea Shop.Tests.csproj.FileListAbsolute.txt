@@ -1,9 +1,11 @@
+F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\EntityFramework.SqlServer.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\Tea Shop.Tests.dll.config
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\Tea Shop.Tests.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\Tea Shop.Tests.pdb
+F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\EntityFramework.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
@@ -17,13 +19,16 @@ F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\System.Web.WebPages
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\Tea Shop.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\System.Web.Optimization.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\System.Web.Http.dll
+F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\ShopBU.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\ShopModel.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\System.Web.Http.WebHost.dll
-F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\System.Net.Http.Formatting.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\WebGrease.dll
+F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\System.Net.Http.Formatting.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\Antlr3.Runtime.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\Tea Shop.pdb
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\Tea Shop.dll.config
+F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\EntityFramework.xml
+F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\EntityFramework.SqlServer.xml
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\Newtonsoft.Json.xml
@@ -35,6 +40,8 @@ F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\System.Web.WebPages
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\System.Web.WebPages.Razor.xml
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\System.Web.Optimization.xml
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\System.Web.Http.xml
+F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\ShopBU.pdb
+F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\ShopBU.dll.config
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\ShopModel.pdb
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\System.Web.Http.WebHost.xml
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\System.Net.Http.Formatting.xml
@@ -44,10 +51,3 @@ F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\obj\Debug\Tea Shop.Tests.cspr
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\obj\Debug\Tea Shop.Tests.csproj.CopyComplete
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\obj\Debug\Tea Shop.Tests.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\obj\Debug\Tea Shop.Tests.pdb
-F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\EntityFramework.dll
-F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\EntityFramework.SqlServer.dll
-F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\ShopBU.dll
-F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\EntityFramework.xml
-F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\EntityFramework.SqlServer.xml
-F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\ShopBU.pdb
-F:\ThinkBridge\ThinkBridge\Tea Shop\Tea Shop.Tests\bin\Debug\ShopBU.dll.config

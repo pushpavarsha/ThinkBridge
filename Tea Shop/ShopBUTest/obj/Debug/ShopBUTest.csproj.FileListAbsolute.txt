@@ -8,10 +8,10 @@ F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBUTest\bin\Debug\EntityFramework.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBUTest\bin\Debug\EntityFramework.SqlServer.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBUTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBUTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBUTest\bin\Debug\Newtonsoft.Json.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBUTest\bin\Debug\ShopBU.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBUTest\bin\Debug\ShopModel.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBUTest\bin\Debug\System.Net.Http.Formatting.dll
-F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBUTest\bin\Debug\Newtonsoft.Json.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBUTest\bin\Debug\ShopBU.pdb
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBUTest\bin\Debug\ShopBU.dll.config
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBUTest\bin\Debug\ShopModel.pdb
@@ -19,8 +19,8 @@ F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBUTest\bin\Debug\EntityFramework.xml
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBUTest\bin\Debug\EntityFramework.SqlServer.xml
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBUTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBUTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
-F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBUTest\bin\Debug\System.Net.Http.Formatting.xml
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBUTest\bin\Debug\Newtonsoft.Json.xml
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBUTest\bin\Debug\System.Net.Http.Formatting.xml
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBUTest\obj\Debug\ShopBUTest.csprojAssemblyReference.cache
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBUTest\obj\Debug\ShopBUTest.csproj.CoreCompileInputs.cache
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBUTest\obj\Debug\ShopBUTest.csproj.CopyComplete

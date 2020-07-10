@@ -1,3 +1,5 @@
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\obj\Debug\ShopAPITest.csprojAssemblyReference.cache
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\obj\Debug\ShopAPITest.csproj.CoreCompileInputs.cache
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
@@ -12,9 +14,9 @@ F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\bin\Debug\Newtonsoft.Json.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\bin\Debug\ShopAPI.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\bin\Debug\System.Net.Http.Formatting.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\bin\Debug\System.Web.Http.dll
-F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\bin\Debug\ShopIBL.dll
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\bin\Debug\ShopIDAL.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\bin\Debug\ShopModel.dll
-F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\bin\Debug\ShopBL.dll
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\bin\Debug\ShopDAL.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\bin\Debug\System.Web.Http.WebHost.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\bin\Debug\ShopData.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\bin\Debug\ShopAPI.pdb
@@ -26,15 +28,13 @@ F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\bin\Debug\Microsoft.VisualStudio
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\bin\Debug\Newtonsoft.Json.xml
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\bin\Debug\System.Net.Http.Formatting.xml
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\bin\Debug\System.Web.Http.xml
-F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\bin\Debug\ShopIBL.pdb
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\bin\Debug\ShopIDAL.pdb
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\bin\Debug\ShopModel.pdb
-F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\bin\Debug\ShopBL.pdb
-F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\bin\Debug\ShopBL.dll.config
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\bin\Debug\ShopDAL.pdb
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\bin\Debug\ShopDAL.dll.config
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\bin\Debug\System.Web.Http.WebHost.xml
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\bin\Debug\ShopData.pdb
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\bin\Debug\ShopData.dll.config
-F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\obj\Debug\ShopAPITest.csprojAssemblyReference.cache
-F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\obj\Debug\ShopAPITest.csproj.CoreCompileInputs.cache
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\obj\Debug\ShopAPITest.csproj.CopyComplete
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\obj\Debug\ShopAPITest.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopAPITest\obj\Debug\ShopAPITest.pdb
