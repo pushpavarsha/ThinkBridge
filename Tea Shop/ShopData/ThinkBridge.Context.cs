@@ -26,5 +26,6 @@ namespace ShopData
         }
     
         public virtual DbSet<TeaShop> TeaShops { get; set; }
+        public virtual DbSet<UserAccount> UserAccounts { get; set; }
     }
 }

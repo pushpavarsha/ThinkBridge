@@ -12,5 +12,15 @@
   </EntityType>
   <EntityContainer Name="ThinkBridgeEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="TeaShops" EntityType="Self.TeaShop" />
+    <EntitySet Name="UserAccounts" EntityType="ThinkBridgeModel.UserAccount" />
   </EntityContainer>
+  <EntityType Name="UserAccount">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmailId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
 </Schema>

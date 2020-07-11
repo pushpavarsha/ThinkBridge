@@ -17,6 +17,8 @@ F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBL\obj\Debug\ShopDAL.csproj.CoreCompileI
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBL\obj\Debug\ShopDAL.csproj.CopyComplete
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBL\obj\Debug\ShopBL.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBL\obj\Debug\ShopBL.pdb
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopDAL\obj\Debug\ShopDAL.csprojAssemblyReference.cache
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopDAL\obj\Debug\ShopDAL.csproj.CoreCompileInputs.cache
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopDAL\bin\Debug\ShopDAL.dll.config
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopDAL\bin\Debug\ShopDAL.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopDAL\bin\Debug\ShopDAL.pdb
@@ -31,8 +33,6 @@ F:\ThinkBridge\ThinkBridge\Tea Shop\ShopDAL\bin\Debug\ShopIDAL.pdb
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopDAL\bin\Debug\ShopModel.pdb
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopDAL\bin\Debug\EntityFramework.xml
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopDAL\bin\Debug\EntityFramework.SqlServer.xml
-F:\ThinkBridge\ThinkBridge\Tea Shop\ShopDAL\obj\Debug\ShopDAL.csprojAssemblyReference.cache
-F:\ThinkBridge\ThinkBridge\Tea Shop\ShopDAL\obj\Debug\ShopDAL.csproj.CoreCompileInputs.cache
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopDAL\obj\Debug\ShopDAL.csproj.CopyComplete
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopDAL\obj\Debug\ShopDAL.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopDAL\obj\Debug\ShopDAL.pdb

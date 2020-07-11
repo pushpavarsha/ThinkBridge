@@ -1,3 +1,4 @@
+F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBLTest\obj\Debug\ShopDALTest.csprojAssemblyReference.cache
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBLTest\obj\Debug\ShopDALTest.csproj.CoreCompileInputs.cache
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBLTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBLTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
@@ -23,7 +24,6 @@ F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBLTest\bin\Debug\Microsoft.VisualStudio.
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBLTest\bin\Debug\ShopIDAL.pdb
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBLTest\bin\Debug\ShopData.pdb
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBLTest\bin\Debug\ShopData.dll.config
-F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBLTest\obj\Debug\ShopDALTest.csprojAssemblyReference.cache
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBLTest\obj\Debug\ShopDALTest.csproj.CopyComplete
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBLTest\obj\Debug\ShopBLTest.dll
 F:\ThinkBridge\ThinkBridge\Tea Shop\ShopBLTest\obj\Debug\ShopBLTest.pdb

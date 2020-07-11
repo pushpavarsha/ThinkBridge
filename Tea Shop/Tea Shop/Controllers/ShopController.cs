@@ -76,7 +76,7 @@ namespace Tea_Shop.Controllers
            
             return RedirectToAction("GetDetails");
         }
-        [HttpPost]
+        [HttpGet]
         public ActionResult DeleteItem(int id)
         {
             bool flag = shop.DeleteItem(id);

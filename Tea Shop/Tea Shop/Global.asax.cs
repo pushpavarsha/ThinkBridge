@@ -13,6 +13,7 @@ namespace Tea_Shop
     {
         protected void Application_Start()
         {
+            GlobalFilters.Filters.Add(new System.Web.Mvc.AuthorizeAttribute());
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);

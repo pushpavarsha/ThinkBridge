@@ -69,6 +69,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ThinkBridge.edmx</DependentUpon>
     </Compile>
+    <Compile Include="UserAccount.cs">
+      <DependentUpon>ThinkBridge.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="ThinkBridge.edmx">

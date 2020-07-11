@@ -34,14 +34,16 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-4"></div>
-            <div class="col-4">
-                <a class="nav-link top-bar" href="#">
-                    Login User
-                    <img src="~/Image/images.png" style="height:50px;" />
+            <div class="col-4"></div>           
+            @if(User.Identity.IsAuthenticated)
+            {
+             <div class="col-4">
+                <a class="nav-link top-bar" href="/Account/LogOut">
+                   LogOut
+                   <img src="~/Image/images.png" style="height:50px;" />
                 </a>
-            </div>
-
+             </div>
+            }
         </div>
     </div>
 
@@ -50,8 +52,8 @@
             <div class="col-2" style="background:aqua;min-height:540px;">
                 <div class="list-group" style="margin-top:20px;">
                     <a href="#" class="list-group-item">Map</a>
-                    <a href="#" class="list-group-item">Item2</a>
-                    <a href="#" class="list-group-item">Item3</a>
+                    <a href="#" class="list-group-item">About</a>
+                    <a href="#" class="list-group-item">Images</a>
                     @RenderSection("IndexSec", false)
                     @RenderSection("ContactSec", false)
                 </div>
