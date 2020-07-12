@@ -18,20 +18,20 @@
     <table class="table" style="overflow-y:auto">
         <tr>
             @*<th>
-                    @Html.DisplayNameFor(model => model.ItemId)
-                </th>*@
+            @Html.DisplayNameFor(model => model.ItemId)
+        </th>*@
             <th>
                 @Html.DisplayNameFor(model => model.ItemName)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Price)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImageFile)
+            </th>
             @*<th>
-                    @Html.DisplayNameFor(model => model.ImageFile)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Description)
-                </th>*@
+            @Html.DisplayNameFor(model => model.Description)
+        </th>*@
             <th></th>
         </tr>
 
@@ -65,34 +65,33 @@
 
     </table>
     <input type="search" class="form-control mr-1" id="search" name="search" placeholder="Search by Name" />
-    <p><input type="text" placeholder="Type something..." id="myInput"></p>
     <button onclick=search()>Go</button>
     <script type="text/javascript">
-        $(document).ready(function () {
-            $("#myInput").on("input", function () {
-                // Print entered value in a div box
-                alert("hii..");
-            });
-
-        //function search() {
-        //    alert("hi");
-        //    var item = $("#search").val();
-        //    alert(item);
-
-        //    $.ajax({
-        //        type: "GET",
-        //        url: "/Shop/SearchItem",
-        //        contentType: "application/html; charset=utf-8",
-        //        data: { name: item },
-        //        dataType: "html",
-        //        success: function (data) {
-        //            $("body").empty().append(data);
-        //        },
-        //        error: function ajaxError(response) {
-        //            alert(response.status + ' ' + response.statusText);
-        //        }
+        //$(document).ready(function () {
+        //    $("#myInput").on("input", function () {
+        //        // Print entered value in a div box
+        //        alert("hii..");
         //    });
-        //};
+
+        function search() {
+            alert("hi");
+            var item = $("#search").val();
+            alert(item);
+
+            $.ajax({
+                type: "GET",
+                url: "/Shop/SearchItem",
+                contentType: "application/html; charset=utf-8",
+                data: { name: item },
+                dataType: "html",
+                success: function (data) {
+                    $("body").empty().append(data);
+                },
+                error: function ajaxError(response) {
+                    alert(response.status + ' ' + response.statusText);
+                }
+            });
+        };
     </script>
 </body>
 </html>

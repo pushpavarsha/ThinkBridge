@@ -12,60 +12,19 @@
     <title>GetItemDetail</title>
 </head>
 <body>
-    @*<p>
-            @Html.ActionLink("Create New", "Create")
-        </p>*@
-    <table class="table">
-        <tr>
-            @*<th>
-                @Html.DisplayNameFor(model => model.ItemId)
-            </th>*@
-            <th>
-                @Html.DisplayNameFor(model => model.ItemName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Price)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ImageFile)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th></th>
-        </tr>
-
-
-        <tr>
-            @*<td>
-                @Html.DisplayFor(model => model.ItemId)
-            </td>*@
-            <td>
-                @Html.DisplayFor(model => model.ItemName)
-            </td>
-            <td>
-                @Html.DisplayFor(model => model.Price)
-            </td>
-            <td>
-                @*@Html.DisplayFor(model => model.ImageFile)*@
-                <img src="@Url.Content(Model.ImageFile)" alt="No Image" width="50" height="40" />
-                @*<img src="@Url.Content(item.ImageFile)" alt="No Image" width="50" height="40" />*@
-            </td>
-            <td>
-                @Html.DisplayFor(model => model.Description)
-            </td>
-            <td>
-                    @Html.ActionLink("Edit", "EditItem", new {  id=Model.ItemId  }) 
-                    @*@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*@
-            </td>
-        </tr>
-
-
-    </table>
-
+    <div style="margin-top:20px;background-color:darkgrey;border-radius:20px;height:500px;">
+        <div style="position:absolute;margin-top:50px;width:1000px; margin-left:50px">
+            <h4>@Html.DisplayFor(model => model.ItemName)</h4> 
+            <img src="@Url.Content(Model.ImageFile)" alt="No Image" style="margin-left:100px;width:300px;height:200px;"/>
+            <div>Price:Rs. @Html.DisplayFor(model => model.Price)</div>
+            <div> @Html.DisplayFor(model => model.Description)</div>
+            <button style="color:black">@Html.ActionLink("Edit", "EditItem", new { id = Model.ItemId })</button>
+        </div>
+       
+    </div>
     <div>
         @Html.ActionLink("Back to List", "GetDetails")
-    </div>
+    </div>    
+
 </body>
 </html>

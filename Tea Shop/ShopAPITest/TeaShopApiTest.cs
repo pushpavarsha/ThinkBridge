@@ -38,5 +38,20 @@ namespace ShopAPITest
             }
 
         }
+        [TestMethod]
+        public void ItemDetails()
+        {
+            try
+            {
+                TeaShopController teaShopCont = new TeaShopController();
+                teaShopCont.Request = new HttpRequestMessage();
+                teaShopCont.Configuration = new HttpConfiguration();
+                var detaills = teaShopCont.GetItemById(5);
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
     }
 }

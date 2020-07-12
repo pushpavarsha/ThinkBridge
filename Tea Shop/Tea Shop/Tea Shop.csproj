@@ -163,6 +163,15 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\Imag01.jpg" />
+    <Content Include="Images\Imag02.jpg" />
+    <Content Include="Images\Imag03.jpg" />
+    <Content Include="Images\Imag04.jpg" />
+    <Content Include="Images\Imag05.jpg" />
+    <Content Include="Images\Imag06.jpg" />
+    <Content Include="Images\Login.png" />
+    <Content Include="Images\Tea.gif" />
+    <Content Include="Images\Call.gif" />
     <Content Include="libman.json" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -302,12 +311,14 @@
     <Content Include="Views\Shop\EditItem.cshtml" />
     <Content Include="Views\Shared\_LayoutLoginPage.cshtml" />
     <Content Include="Views\Account\About.cshtml" />
-    <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Account\SignUp.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Contact.cshtml" />
+    <Content Include="Views\Account\Images.cshtml" />
+    <Content Include="Views\Account\RestCredential.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Images\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

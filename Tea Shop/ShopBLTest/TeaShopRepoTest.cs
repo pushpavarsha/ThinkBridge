@@ -22,5 +22,36 @@ namespace ShopBLTest
 
             }
         }
+        
+        [TestMethod]
+        public void TestItemDetails()
+        {
+            try
+            {
+                TeaShopRepo shopRepo = new TeaShopRepo();
+                TeaShopVM itemLst = shopRepo.GetDetailsById(5);
+
+            }
+            catch (Exception e)
+            {
+
+            }
+
+        }
+        [TestMethod]
+        public void DeleteDetails()
+        {
+            try
+            {
+                TeaShopRepo shopRepo = new TeaShopRepo();
+                shopRepo.DeleteDetails(5);
+
+            }
+            catch (Exception e)
+            {
+
+            }
+
+        }
     }
 }

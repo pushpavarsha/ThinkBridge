@@ -11,12 +11,14 @@ namespace ShopModel
     {
         public int ItemId { get; set; }
         [Required]
+        [RegularExpression("^[a-zA-Z]+$", ErrorMessage ="Enter Alphabet only")]
         public string ItemName { get; set; }
         [Required]
+        [RegularExpression("^[0-9]{1,5}$",ErrorMessage ="Enter Number Only,Max length 5")]
         public int Price { get; set; }
-        [Required]
+        [Required(ErrorMessage ="Select Image")]
         public string ImageFile { get; set; }
-        [Required]
+        [Required(ErrorMessage ="Write something in Description")]
         public string Description { get; set; }
     }
 }

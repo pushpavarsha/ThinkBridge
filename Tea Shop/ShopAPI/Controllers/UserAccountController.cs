@@ -13,10 +13,13 @@ using System.Drawing.Printing;
 
 namespace ShopAPI.Controllers
 {
+    [RoutePrefix("api/UserAccount")]
     public class UserAccountController : ApiController
     {
         IUserAccount repo = new UserAccountRepo();
         [HttpPost]
+        //[Route("api/UserAccount/CreateAccount/{user}")]
+        [Route("CreateAccount")]
         public IHttpActionResult CreateAccount(UserAccountVM user)
         {
             try 
@@ -24,7 +27,7 @@ namespace ShopAPI.Controllers
               bool flag=repo.SignUp(user);
                 if(flag)
                 { 
-                    return Ok();
+                    return Ok("User Created");
                 }
                 else
                 {
@@ -39,29 +42,33 @@ namespace ShopAPI.Controllers
             }
         }
 
-        [HttpGet]
+        [HttpPost]
+        [Route("UserLogin")]
         public IHttpActionResult UserLogin(UserAccountVM user)
         {
             try
             {
                 bool flag = repo.UserValidation(user);
                 if (flag)
-                    return Ok();
+                    return Ok("Valid User");
                 else
                 {
-                    dynamic response = new ExpandoObject();
-                    response.message = "Invalid User";
-                    return Content<UserAccountVM>(HttpStatusCode.BadRequest, response);
+                    //dynamic response = new ExpandoObject();
+                    //response.message = "Invalid User";
+                    //return Content<UserAccountVM>(HttpStatusCode.BadRequest, response);
+                    return BadRequest();
                 }
 
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
-            
+
         }
 
         [HttpPut]
+        [Route("RestPassword")]
         public IHttpActionResult RestPassword(UserAccountVM _user)
         {
             try
@@ -73,9 +80,10 @@ namespace ShopAPI.Controllers
                 }
                 else
                 {
-                    dynamic response = new ExpandoObject();
-                    response.message = "Password Cant be  reset";
-                    return Content<UserAccountVM>(HttpStatusCode.BadRequest, response);
+                    // dynamic response = new ExpandoObject();
+                    //response.message = "Password Can't be  reset";
+                    //return Content<UserAccountVM>(HttpStatusCode.BadRequest, response);
+                    return BadRequest();
                 }
             }catch(Exception ex)
             {

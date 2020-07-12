@@ -17,21 +17,19 @@ namespace ShopBU
                 using (var client = new HttpClient())
                 {
                     client.BaseAddress = new Uri("https://localhost:44393/api/UserAccount/");
-                    var responseTask = client.PostAsJsonAsync("CreateAccount", user);
-                    responseTask.Wait();
+                    var postTask = client.PostAsJsonAsync("CreateAccount", user);
+                    postTask.Wait();
 
-                    var respResult = responseTask.Result;
-                    if (respResult.IsSuccessStatusCode)
+                    var result = postTask.Result;
+                    if (result.IsSuccessStatusCode)
                     {
                         return true;
                     }
-                    else
-                    {
-                        return false;
-                    }
 
-                };
-            }catch(Exception ex)
+                }
+                return false;
+            }
+            catch(Exception ex)
             {
                 Console.WriteLine(ex.Message);
                 return false;
@@ -43,7 +41,27 @@ namespace ShopBU
             using(var client=new HttpClient())
             {
                 client.BaseAddress = new Uri("https://localhost:44393/api/UserAccount/");
-                var responseTask = client.PutAsJsonAsync("RestPassword", user);
+                var responseTask = client.PostAsJsonAsync<UserAccountVM>("UserLogin", user);
+                responseTask.Wait();
+
+                var respResult = responseTask.Result;
+                if (respResult.IsSuccessStatusCode)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
+
+        public bool RestPassword(UserAccountVM _user)
+        {
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("https://localhost:44393/api/UserAccount/");
+                var responseTask = client.PutAsJsonAsync<UserAccountVM>("RestPassword",_user);
                 responseTask.Wait();
 
                 var respResult = responseTask.Result;

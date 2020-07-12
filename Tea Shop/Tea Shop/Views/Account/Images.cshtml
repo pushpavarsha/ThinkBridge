@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Images";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+@section LoginPage
+{
+    <a href="/Account/Login" class="list-group-item" id="log">Login</a>
+}
+<style>
+    img{
+        width:500px;
+        height:300px;
+    }
+</style>
+<div style="margin:50px;">
+    <table>
+        <tbody>
+            <tr>
+                <td><img src="~/Images/Imag01.jpg" /></td>
+                <td>
+                    <img src="~/Images/Imag02.jpg" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="~/Images/Imag03.jpg" />
+                </td>
+                <td>
+                    <img src="~/Images/Imag05.jpg" />
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>

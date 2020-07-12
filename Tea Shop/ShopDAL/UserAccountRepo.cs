@@ -20,21 +20,21 @@ namespace ShopDAL
         {
             UserAccount _user = db.UserAccounts.Where(x => x.EmailId == user.EmailId).FirstOrDefault();
             if(_user==null)
-            { 
-            UserAccount newAccount = new UserAccount();
-            newAccount.Username = user.Username;
-            newAccount.EmailId = user.EmailId;
-            newAccount.Password = encrypt(newAccount.Password);
-            db.UserAccounts.Add(newAccount);
-            db.SaveChanges();
-            return true;
-            
-            }
-            else
             {
-                return false;
-            }
-
+                if (user.Password.Equals(user.ConfirmPassword))
+                {
+                    UserAccount newAccount = new UserAccount();
+                    newAccount.Username = user.Username;
+                    newAccount.EmailId = user.EmailId;
+                    newAccount.Password = encrypt(user.Password);
+                    db.UserAccounts.Add(newAccount);
+                    db.SaveChanges();
+                    return true;
+                }
+            
+            }           
+            return false;
+            
         }
 
         public bool UserValidation(UserAccountVM user)
@@ -43,7 +43,7 @@ namespace ShopDAL
             bool isValid = db.UserAccounts.Any(x => x.EmailId == user.EmailId && x.Password == user.Password);
             if(isValid)
             {
-                FormsAuthentication.SetAuthCookie(user.EmailId, false);
+               // FormsAuthentication.SetAuthCookie(user.EmailId, false);
                 return true;
             }
 
@@ -76,8 +76,14 @@ namespace ShopDAL
             UserAccount _user = db.UserAccounts.Where(x => x.EmailId == user.EmailId).FirstOrDefault();
             if(_user!=null)
             {
-                _user.Password = user.Password;
-                return true;
+                if(user.Password.Equals(user.ConfirmPassword))
+                {
+                    _user.Password = encrypt(user.Password);
+                    db.Entry(_user).State = System.Data.Entity.EntityState.Modified;
+                    db.SaveChanges();
+                    return true;
+                }
+                
             }
             return false;
         }
