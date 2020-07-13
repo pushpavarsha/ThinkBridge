@@ -41,13 +41,13 @@ namespace ShopBU
             }
         }
 
-        public bool InsertItem(TeaShopVM _item)
+        public bool InsertItem(TeaShopVM item)
         {
             
             using (var client = new HttpClient())
             {
                 client.BaseAddress = new Uri("https://localhost:44393/api/TeaShop/");
-                var postTask = client.PostAsJsonAsync<TeaShopVM>("AddItem", _item);
+                var postTask = client.PostAsJsonAsync<TeaShopVM>("AddItem",item);
                 postTask.Wait();
 
                 var result = postTask.Result;

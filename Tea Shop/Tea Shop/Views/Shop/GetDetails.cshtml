@@ -10,6 +10,58 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>GetDetails</title>
+    <script>
+        //$(document).ready(function () {
+
+        //    $(".Deletebtn").on(onclick, function () {
+        //        var Item_Id = $(this).attr('id');
+        //        $.ajax({
+        //            type: "GET",
+        //            url: "/Shop/DeleteItem",
+        //            contentType: "application/html; charset=utf-8",
+        //            data: { id: Item_Id },
+        //            //dataType: "html",
+        //            success: function (data) {
+        //                alert("Item has been deleted");
+        //            },
+        //            error: function ajaxError(response) {
+        //                alert(response.status + ' ' + response.statusText);
+        //            }
+        //        });
+
+        //    });
+
+           
+
+        //});
+
+        //function ItemDelete() {
+        //    alert("do you want to delete???");
+        //    //var Item_Id = $(this).attr("id");
+        //    var Item_Id = $("#butn").val();
+        //    alert("hi" + Item_Id);
+        //    $.ajax({
+        //        type: "POST",
+        //        url: "/Shop/DeleteItem/" + Item_Id.toString(),
+        //        contentType: "application/html; charset=utf-8",
+        //        dataType:"text",
+        //        //data: { id: Item_Id },
+        //        //dataType: "html",
+        //        success: function (data) {
+        //             $('#del').html(data);
+        //            //$('body').empty().append(data);
+                    
+        //        },
+        //        error: function (xhr, status, error) {
+        //            alert(xhr.responseText);
+        //            alert(status);
+        //            alert(error);
+        //        }
+        //    });
+
+        //}
+      
+    </script>
 </head>
 <body>
     <p>
@@ -18,8 +70,8 @@
     <table class="table" style="overflow-y:auto">
         <tr>
             @*<th>
-            @Html.DisplayNameFor(model => model.ItemId)
-        </th>*@
+                    @Html.DisplayNameFor(model => model.ItemId)
+                </th>*@
             <th>
                 @Html.DisplayNameFor(model => model.ItemName)
             </th>
@@ -30,14 +82,14 @@
                 @Html.DisplayNameFor(model => model.ImageFile)
             </th>
             @*<th>
-            @Html.DisplayNameFor(model => model.Description)
-        </th>*@
+                    @Html.DisplayNameFor(model => model.Description)
+                </th>*@
             <th></th>
         </tr>
 
         @foreach (var item in Model)
         {
-            <tr onclick="location.href='@Url.Action("GetItemDetail","Shop",new { id=item.ItemId})'">
+            <tr onclick="location.href='@Url.Action("GetItemDetail", "Shop", new { id = item.ItemId })'">
                 @*<tr onclick="EditDetails()">*@
                 @*<td>
                         @Html.DisplayFor(modelItem => item.ItemId)
@@ -56,42 +108,19 @@
                         @Html.DisplayFor(modelItem => item.Description)
                     </td>*@
             <td>
+                @*<button id="butn" value=@item.ItemId onclick="ItemDelete()">Delete</button>
+                @Ajax.ActionLink("Delete", "DeleteItem", new { id = item.ItemId }, new AjaxOptions() { UpdateTargetId = "del", HttpMethod = "POST" })*@
                 @Html.ActionLink("Delete", "DeleteItem", new { id = item.ItemId })
-                @*@Html.ActionLink("Edit", "EditItem", new {  id=item.ItemId  }) |*@
-                @*@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |*@
+                
+               
             </td>
             </tr>
+           
         }
 
     </table>
-    <input type="search" class="form-control mr-1" id="search" name="search" placeholder="Search by Name" />
-    <button onclick=search()>Go</button>
-    <script type="text/javascript">
-        //$(document).ready(function () {
-        //    $("#myInput").on("input", function () {
-        //        // Print entered value in a div box
-        //        alert("hii..");
-        //    });
-
-        function search() {
-            alert("hi");
-            var item = $("#search").val();
-            alert(item);
-
-            $.ajax({
-                type: "GET",
-                url: "/Shop/SearchItem",
-                contentType: "application/html; charset=utf-8",
-                data: { name: item },
-                dataType: "html",
-                success: function (data) {
-                    $("body").empty().append(data);
-                },
-                error: function ajaxError(response) {
-                    alert(response.status + ' ' + response.statusText);
-                }
-            });
-        };
-    </script>
+    
+    <div id="del"></div>
+    
 </body>
 </html>

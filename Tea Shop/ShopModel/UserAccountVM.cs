@@ -14,7 +14,7 @@ namespace ShopModel
         [EmailAddress]
         public string EmailId { get; set; }
         // [Required]
-        [RegularExpression("^[a-zA-Z]+$", ErrorMessage = "Enter Alphabet only")]
+        [RegularExpression("^[a-zA-Z_ ]+", ErrorMessage = "Enter Alphabet only")]
         public string Username { get; set; }
         [Required]
         //[RegularExpression("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[*.!@$%^&(){}[]:;<>,.?/~_+-=|\\]).{8,32}$",ErrorMessage ="")]

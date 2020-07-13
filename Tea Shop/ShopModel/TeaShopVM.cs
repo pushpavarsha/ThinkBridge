@@ -11,7 +11,7 @@ namespace ShopModel
     {
         public int ItemId { get; set; }
         [Required]
-        [RegularExpression("^[a-zA-Z]+$", ErrorMessage ="Enter Alphabet only")]
+        [RegularExpression("^[a-zA-Z_ ]+", ErrorMessage ="Enter Alphabet only")]
         public string ItemName { get; set; }
         [Required]
         [RegularExpression("^[0-9]{1,5}$",ErrorMessage ="Enter Number Only,Max length 5")]

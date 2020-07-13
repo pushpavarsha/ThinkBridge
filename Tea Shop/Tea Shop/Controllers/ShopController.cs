@@ -80,7 +80,13 @@ namespace Tea_Shop.Controllers
         public ActionResult DeleteItem(int id)
         {
             bool flag = shop.DeleteItem(id);
+            if(flag)
+            {
+                return RedirectToAction("GetDetails");
+                //return Content("Delete Successfully");
+            }
             return RedirectToAction("GetDetails");
+           // return Content("Can't be deleted");
         }
        
       
