@@ -16,6 +16,11 @@ namespace Tea_Shop.Controllers
 
         TeaShopBU shop = new TeaShopBU();
 
+        public ActionResult GetData()
+        {
+            return Content("Helloo");
+        }
+
         [HttpGet]
         public ActionResult GetDetails()
         {

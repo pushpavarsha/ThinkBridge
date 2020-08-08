@@ -32,7 +32,7 @@ namespace ShopDAL
                                             ImageFile=x.ImageFile,
                                             Description=x.Description
                                         });
-                return item.ToList();
+                return item;
   
         }
 

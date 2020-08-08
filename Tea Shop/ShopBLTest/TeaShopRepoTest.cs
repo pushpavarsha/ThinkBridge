@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ShopDAL;
 using ShopModel;
@@ -15,7 +16,9 @@ namespace ShopBLTest
             try 
             { 
                 TeaShopRepo shopRepo = new TeaShopRepo();
-                IEnumerable<TeaShopVM> itemLst = shopRepo.GetDetails();
+                //int[] arr = { 1, 2, 3, 4, 5 };
+                IEnumerable<TeaShopVM> itemLst =shopRepo.GetDetails();
+               itemLst = itemLst.Take(1);
 
             }catch(Exception e)
             {
@@ -29,7 +32,7 @@ namespace ShopBLTest
             try
             {
                 TeaShopRepo shopRepo = new TeaShopRepo();
-                TeaShopVM itemLst = shopRepo.GetDetailsById(5);
+                TeaShopVM itemLst = shopRepo.GetDetailsById(35);
 
             }
             catch (Exception e)
@@ -44,7 +47,7 @@ namespace ShopBLTest
             try
             {
                 TeaShopRepo shopRepo = new TeaShopRepo();
-                shopRepo.DeleteDetails(5);
+                shopRepo.DeleteDetails(35);
 
             }
             catch (Exception e)

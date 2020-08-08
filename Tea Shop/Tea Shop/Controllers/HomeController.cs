@@ -10,6 +10,7 @@ namespace Tea_Shop.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.Msg = "Your application Test page.";
             return View();
         }
 

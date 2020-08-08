@@ -15,6 +15,7 @@ namespace Tea_Shop.Tests.Controllers
         [TestMethod]
         public void Index()
         {
+
             // Arrange
             ShopController controller = new ShopController();
 
@@ -22,7 +23,7 @@ namespace Tea_Shop.Tests.Controllers
             ViewResult result = controller.GetDetails() as ViewResult;
 
             // Assert
-           // Assert.IsNotNull(result);
+            Assert.IsNotNull(result);
         }
 
         [TestMethod]
